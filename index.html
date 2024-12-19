@@ -2,48 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+  <title>QR Code Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Importing font for styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
   <style>
-    body{
-      background-color: hsl(212, 45%, 89%);
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1{
+
+    /* Body styling, background color, font, and layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh; 
+      margin: 0;
+      background-color: hsl(212, 45%, 89%);
+      font-family: "Outfit", serif;
+      font-optical-sizing: auto;
+    }
+
+    /* Main container to center the card */
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Card */
+    .card {
+      width: 250px;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      text-align: center;
+      padding: 1em;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    /* Image */
+    img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid hsl(212, 45%, 89%);
+      border-radius: 20px;
+    }
+
+    /* Heading */
+    h1 {
+      color: hsl(218, 44%, 22%);
+      font-weight: 700;
+      font-size: 1em;
+      padding: 20px 15px;
+    }
+
+    h2 {
+      color: hsl(216, 15%, 48%);
+      font-weight: 400;
+      font-size: 0.7em;
+      padding: 0 15px 20px;
+    }
+
+    /* Footer */
+    footer {
+      font-size: 11px;
+      text-align: center;
+      padding: 10px 0;
+      background-color: hsl(0, 0%, 100%);
+      border-top: 1px solid hsl(212, 45%, 89%);
       color: hsl(216, 15%, 48%);
     }
-    p{
-      color: hsl(218, 44%, 22%);
+
+    /* Footer Links */
+    footer a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
     }
-    #main{
-      width: 250px;
-      height: auto;
-      padding: 25px;
-      background-color: White: hsl(0, 0%, 100%);
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
   <!-- main -->
-  <div id="main">
-    <img src="images/image-qr-code.png" alt="qr-code-image">
-    <h1>
-      Improve your front-end skills by building projects
-    </h1>
-    <p>
-      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-    </p>
-  </div>
-  <!-- attribution -->
-  <div class="attribution">
+  <main>
+    <!-- card is the QR code container-->
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="QR Code for Frontend Mentor">
+      <h1>Improve your front-end skills by building projects</h1>
+      <h2>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://resume8305.wordpress.com/">Prashant Uniyal</a>.
-  </div>
+  </footer>
 </body>
 </html>
