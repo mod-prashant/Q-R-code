@@ -1,9 +1,13 @@
 /* General reset */
-* {
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Body styling, background color, font, and layout */
 body {
     display: flex;
@@ -26,7 +30,7 @@ main {
 
 /* Card */
 .card {
-    width: 250px;
+    width: 320px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     text-align: center;
