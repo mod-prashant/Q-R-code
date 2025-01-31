@@ -1,10 +1,11 @@
 # Frontend Mentor - QR Code Component Solution
 
-This is my solution to the [QR Code Component Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). The challenge involves building a visually accurate and responsive QR code component, helping to practice and improve frontend development skills.
+This is my solution to the [QR Code Component Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
 ## Table of Contents
 
 - [Overview](#overview)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My Process](#my-process)
@@ -17,9 +18,13 @@ This is my solution to the [QR Code Component Challenge on Frontend Mentor](http
 
 ## Overview
 
+### The challenge
+
+The challenge involves building a visually accurate and responsive QR code component, helping to practice and improve frontend development skills.
+
 ### Screenshot
 
-![Solution Screenshot](./screenshot.png)
+![Solution Screenshot](./images/preview/screenshot.png)
 
 ### Links
 
@@ -57,4 +62,4 @@ Moving forward, I aim to:
 
 ## Acknowledgments
 
-I would like to thank the Frontend Mentor for providing this great learning opportunity.
+I would like to thank the Frontend Mentor for providing this great learning opportunity and Frontend Mentor community for professional feedbacks.
